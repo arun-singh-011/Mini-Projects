@@ -29,6 +29,7 @@ btn.addEventListener("click", () => {
 
   const randomText = Math.floor(Math.random() * reviews.length);
   let final = reviews[randomText];
+  k;
 
   reviewName.innerHTML = final.name;
   reviewTitle.innerHTML = final.title;
