@@ -1,0 +1,49 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  left: 0.5rem;
+  padding: 0.25rem;
+  border: black solid 1px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#close {
+  display: none;
+  cursor: pointer;
+}
+.menu {
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  top: 0;
+  left: 0;
+
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 2rem;
+  cursor: pointer;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+.menu li {
+  margin: 2rem;
+}
+.showMenu {
+  transform: translateY(0);
+}
+.menuIconHide {
+  display: none;
+}
