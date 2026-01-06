@@ -7,12 +7,20 @@
     <script src="./app.js" defer></script>
     <title>Modal</title>
   </head>
-  <body>
-    <h1>Modal Project</h1>
-    <div class="modal-wrapper">
+  <body class="body">
+    <button id="show">Modal Project</button>
+    <div id="modal" class="modal-wrapper hide-modal">
+      <div class="btn-div">
+        <button id="closeBtn" class="close-btn">close</button>
+      </div>
       <h2 class="modal-h2">Modal is here!</h2>
-      <p>This is the body paragraph of the modal</p>
-      <label for="email" title="Email">Email</label>
+      <p class="modal-para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel
+        aliquid sed. In, temporibus iusto. Deserunt inventore accusamus,
+        tempore, nisi minima blanditiis repudiandae non dolores in, reiciendis
+        expedita consequatur voluptatem.
+      </p>
+      <label class="label" for="email" title="Email">Email</label>
       <input type="text" />
     </div>
   </body>
