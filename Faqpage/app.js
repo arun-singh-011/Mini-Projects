@@ -1,19 +1,13 @@
-const toggle = document.querySelectorAll("#plusBtn");
-const answers = document.querySelectorAll(".test");
-// btn.forEach((event) => {
-//   event.addEventListener("click", () => {
-//     console.log("clicked");
-//   });
-// });
+const question = document.querySelectorAll(".question");
+const answer = document.querySelectorAll(".answer");
+const wrapper = document.querySelectorAll(".wrapper");
 
-toggle.forEach((event) => {
+wrapper.forEach((event) => {
   event.addEventListener("click", () => {
-    if (event.classList.contains("hideAnswer")) {
-      event.classList.remove("hideAnswer");
-      event.classList.add("showAnswer");
+    if (event.classList.contains("active")) {
+      event.classList.remove("active");
     } else {
-      event.classList.add("hideAnswer");
-      console.log("clicked");
+      event.classList.add("active");
     }
   });
 });
