@@ -1,0 +1,64 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  padding: 4rem;
+}
+h1 {
+  text-align: center;
+}
+img {
+  border-radius: 1.5rem;
+}
+.filters li {
+  list-style: none;
+  background-color: rebeccapurple;
+  color: white;
+  border: solid 1px black;
+  border-radius: 0.5rem;
+  padding: 4px;
+  cursor: pointer;
+}
+.filters li:hover {
+  background-color: white;
+  color: rebeccapurple;
+}
+.filters li:active {
+  background-color: white;
+  color: rebeccapurple;
+}
+
+.filters.active {
+  background-color: white;
+  color: rebeccapurple;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+.headingPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headingPrice p {
+  font-weight: bold;
+}
+.imageText {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: start;
+}
+.menuHolder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.menuItem {
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: hotpink;
+  color: white;
+}
