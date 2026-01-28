@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,15 +11,15 @@
     <h1>Our Menu</h1>
     <div class="filterWrapper">
       <ul class="filters">
-        <li id="getAll">All</li>
-        <li id="getBreakfast">Breakfast</li>
-        <li id="getLunch">Lunch</li>
-        <li id="getShakes">Shakes</li>
-        <li id="getDinner">Dinner</li>
+        <li data-filter="all" id="getAll">All</li>
+        <li data-filter="breakfast" id="getBreakfast">Breakfast</li>
+        <li data-filter="lunch" id="getLunch">Lunch</li>
+        <li data-filter="shakes" id="getShakes">Shakes</li>
+        <li data-filter="dinner" id="getDinner">Dinner</li>
       </ul>
     </div>
     <section class="menuHolder">
-      <div class="menuItem">
+      <div data-category="breakfast" class="menuItem">
         <div class="headingPrice">
           <h2>Buttermilk Pancakes</h2>
           <p>$15.99</p>
@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div id="dinner" class="menuItem">
+      <div data-category="dinner" id="dinner" class="menuItem">
         <div class="headingPrice">
           <h2>Diner Double</h2>
           <p>$13.99</p>
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div id="shakes" class="menuItem">
+      <div data-category="shakes" id="shakes" class="menuItem">
         <div class="headingPrice">
           <h2>Godzilla Milkshake</h2>
           <p>6.99</p>
@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <div id="lunch" class="menuItem">
+      <div data-category="lunch" id="lunch" class="menuItem">
         <div class="headingPrice">
           <h2>Country Delight</h2>
           <p>$20.99</p>
@@ -63,7 +63,7 @@
         </div>
       </div>
 
-      <div id="shakes" class="menuItem">
+      <div data-category="shakes" id="shakes" class="menuItem">
         <div class="headingPrice">
           <h2>Sundae Delight</h2>
           <p>$10.99</p>
@@ -74,7 +74,7 @@
         </div>
       </div>
 
-      <div id="breakfast" class="menuItem">
+      <div data-category="breakfast" id="breakfast" class="menuItem">
         <div class="headingPrice">
           <h2>Choco Lava</h2>
           <p>$14.99</p>
@@ -85,7 +85,7 @@
         </div>
       </div>
 
-      <div class="menuItem">
+      <div data-category="lunch" class="menuItem">
         <div class="headingPrice">
           <h2>Bomber Queen</h2>
           <p>$19.99</p>

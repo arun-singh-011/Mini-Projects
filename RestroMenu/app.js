@@ -1,14 +1,18 @@
-// const fil = document.querySelectorAll(".filters");
-const all = document.getElementById("getAll");
-const breakfast = document.getElementById("getBreakfast");
-const lunch = document.getElementById("getLunch");
-const dinner = document.getElementById("getDinner");
-const shakes = document.getElementById("getShakes");
+const filters = document.querySelectorAll(".filters li");
+const items = document.querySelectorAll(".menuItem");
 
-breakfast.addEventListener("click", () => {
-  breakfast.style.display = "block";
-  lunch.style.display = "none";
+filters.forEach((button) => {
+  button.addEventListener("click", () => {
+    const selectedFilter = button.dataset.filter;
 
-  dinner.style.display = "none";
-  shakes.style.display = "none";
+    items.forEach((item) => {
+      const category = item.dataset.category;
+
+      if (selectedFilter === "all" || category === selectedFilter) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
 });
